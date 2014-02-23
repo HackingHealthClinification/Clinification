@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_size_micro"
+    android:paddingBottom="@dimen/margin_size_micro"
+    android:background="@drawable/appt_list_title_field"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:layout_width="@dimen/enlarged_touch_area"
+        android:layout_height="@dimen/enlarged_touch_area"
+        android:id="@+id/maps_link_button"
+        android:background="@drawable/locate_button"
+        android:layout_margin="@dimen/margin_size_medium" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appt_list_title_field"
+        android:gravity="center_vertical">
+    <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:customFont="montserrat_regular.ttf"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:id="@+id/appointment_location_name"
+        android:text="Sainte Justine Hospital" />
+    <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:customFont="montserrat_regular.ttf"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:id="@+id/appointment_doctor"
+        android:text="Dr Monk" />
+    <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:customFont="montserrat_regular.ttf"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:id="@+id/appointment_location_address"
+        android:text="1234 Somestreet Dr, Montreal" />
+    <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:customFont="montserrat_regular.ttf"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:id="@+id/appointment_phone_number"
+        android:text="3141592653" />
+    <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:customFont="montserrat_regular.ttf"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:id="@+id/appointment_date_time"
+        android:text="January 30, 2014, 5:20:00 AM" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Standard Palette -->
+    <color name="red">#FF0000</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="indigo">#4B0082</color>
+    <color name="violet">#EE82EE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_grey">#656565</color>
+    <!-- /Standard Palette -->
+
+    <!-- Application Specific Palette -->
+    <color name="clinification_green">#0DBDB5</color>
+    <color name="application_text">#4D4D4D</color>
+    <color name="background_grey">#DCDCDC</color>
+    <color name="custom_color_4">#FFFFFF</color>
+    <!-- /Application Specific Palette -->>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HackingHealthClinification</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="greeting">Hello %s</string>
+    <string name="next_appointment">Your next apointment is: %s</string>
+
+    <string name="address_header">ADDRESS: %s</string>
+    <string name="doctor_name_header">DOCTOR: %s</string>
+
+    <string name="application_fucntion_1">View Appointments</string>
+    <string name="application_fucntion_2">Manage Appointments</string>
+
+    <string name="new_appointment_offer">Are you available for the following appointment?</string>
+    <string name="string_yes">Yes</string>
+    <string name="string_no">No</string>
+
+    <string-array name="hospital_names">
+        <item name="h1">St. Mary\'s Hospital Centre</item>
+        <item name="h3">Hôpital Maisonneuve-Rosemont</item>
+        <item name="h4">Montréal General Hospital (MUHC)</item>
+        <item name="h5">Jewish General Hospital</item>
+        <item name="h6">Hôpital Louis-H. Lafontaine (Mental Health)</item>
+        <item name="h7">Douglas Hospital</item>
+    </string-array>
+
+    <string-array name="hospital_address">
+        <item name="a1">3830 Avenue Lacombe, Montreal, QC H3T 1M7</item>
+        <item name="a2">5415 Boulevard de l\'Assomption, Montréal, QC H1T 2M4</item>
+        <item name="a3">1650 Cedar Ave, Montreal, QC H3G 1A4</item>
+        <item name="a4">3755 Côte-Sainte-Catherine Road, Montréal, QC H3T 1E2</item>
+        <item name="a5">7401, rue Hochelaga Montréal (QC) H1N3M5</item>
+        <item name="a6">6875 Boulevard Lasalle, Montreal, QC H4H 1R2</item>
+    </string-array>
+
+    <string-array name="doctor_names">
+        <item name="d1">Mark Iantorno, MD</item>
+        <item name="d2">Mark Iantorno, MD</item>
+        <item name="d3">Mark Iantorno, MD</item>
+        <item name="d4">Mark Iantorno, MD</item>
+        <item name="d5">Mark Iantorno, MD</item>
+        <item name="d7">Mark Iantorno, MD</item>
+    </string-array>
+
+</resources>

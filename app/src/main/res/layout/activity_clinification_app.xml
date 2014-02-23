@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background_grey"
+    tools:context="com.example.hackinghealthclinification.app.ClinificationApp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appointment_list_top"
+        android:gravity="center"
+        android:background="@drawable/appt_list_title_field"
+        >
+        <ImageView
+            android:layout_width="@dimen/enlarged_touch_area"
+            android:layout_height="@dimen/enlarged_touch_area"
+            android:id="@+id/imageView"
+            android:layout_margin="@dimen/margin_size_medium"
+            android:background="@drawable/clinificationlogo" />
+        <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:customFont="montserrat_bold.ttf"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:id="@+id/appointment_doctor"
+            android:text="Hacking Health 2014 \nClinification Application"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.example.hackinghealthclinification.app.CustomViewClasses.CustomButtonView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enlarged_touch_area"
+            android:gravity="center"
+            android:text="@string/application_fucntion_1"
+            android:id="@+id/launch_button_view_appointments"
+            custom:customFont="montserrat_bold.ttf"
+            android:textColor="@drawable/clinification_button_text"
+            android:textSize="@dimen/text_size_large"
+            android:background="@drawable/aplication_button"
+            android:layout_margin="@dimen/margin_size_small"
+            android:clickable="true" />
+        <com.example.hackinghealthclinification.app.CustomViewClasses.CustomButtonView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/enlarged_touch_area"
+            android:gravity="center"
+            android:text="@string/application_fucntion_2"
+            android:id="@+id/launch_button_test"
+            custom:customFont="montserrat_bold.ttf"
+            android:textColor="@drawable/clinification_button_text"
+            android:textSize="@dimen/text_size_large"
+            android:background="@drawable/aplication_button"
+            android:layout_margin="@dimen/margin_size_small"
+            android:clickable="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appointment_list_top"
+        android:background="@color/clinification_green"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/enlarged_touch_area"
+            android:layout_height="@dimen/enlarged_touch_area"
+            android:id="@+id/imageView"
+            android:layout_margin="@dimen/margin_size_small"
+            android:layout_gravity="center"
+            android:background="@drawable/clinificationlogo" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:customFont="montserrat_bold.ttf"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:id="@+id/user_greeting_field"
+            android:layout_marginTop="@dimen/margin_size_medium"
+            android:layout_marginRight="@dimen/margin_size_medium"
+            android:layout_marginBottom="@dimen/margin_size_small"
+            android:text="Hello Mark Iantorno"/>
+
+            <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:customFont="montserrat_regular.ttf"
+                android:textSize="@dimen/text_size_medium"
+                android:textColor="@color/white"
+                android:id="@+id/user_next_appointment_title"
+                android:layout_marginRight="@dimen/margin_size_medium"
+                android:layout_marginBottom="@dimen/margin_size_medium"
+                android:text="You have the following appointments scheduled."/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_small"
+        android:background="@color/dark_grey"
+        android:paddingTop="@dimen/margin_size_small"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/margin_size_medium"
+        android:cacheColorHint="@color/clinification_green"
+        android:id="@id/android:list"
+        android:overScrollMode="always"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_size_medium"
+        android:layout_marginRight="@dimen/margin_size_medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_size_small"
+        android:background="@color/dark_grey"
+        android:paddingTop="@dimen/margin_size_small"/>
+</LinearLayout>

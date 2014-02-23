@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background">
+
+    <com.example.hackinghealthclinification.app.CustomViewClasses.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Field."
+        android:textSize="@dimen/text_size_medium"
+        android:textColor="@color/clinification_green"
+        android:background="@android:color/transparent"
+        android:id="@+id/dialog_text_field"
+        custom:customFont="montserrat_regular.ttf"
+        android:enabled="false"
+        android:paddingLeft="@dimen/margin_size_small"
+        android:paddingRight="@dimen/margin_size_small"
+        android:paddingTop="@dimen/margin_size_medium"
+        android:paddingBottom="@dimen/text_size_medium" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.hackinghealthclinification.app.CustomViewClasses.CustomButtonView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/dialog_left_button"
+            android:textColor="@drawable/clinification_button_text"
+            android:id="@+id/dialog_left_button"
+            custom:customFont="montserrat_regular.ttf"
+            android:padding="@dimen/margin_size_micro" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"></LinearLayout>
+
+        <com.example.hackinghealthclinification.app.CustomViewClasses.CustomButtonView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/dialog_right_button"
+            android:textColor="@drawable/clinification_button_text"
+            android:id="@+id/dialog_right_button"
+            custom:customFont="montserrat_regular.ttf"
+            android:padding="@dimen/margin_size_micro" />
+    </LinearLayout>
+
+</LinearLayout>
